@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+
+
+    <h2 id="my_title">Welcome to static page served by NodeJS !</h2>
+
+    <input id="my_input" type="text">
+    <button id="my_btn">Send Message</button>
+
+    <h3>Chat Messages</h3>
+    <div class="well well-sm pre-scrollable">
+        <ul id="my_ul">
+
+        </ul>
+
+    </div>
+
+    <h3>Results from Arduino</h3>
+    <div class="well well-sm pre-scrollable">
+        <ul id="my_ul_arduino">
+
+        </ul>
+
+    </div>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="my_script.js"></script>
+
+</body>
+</html>
