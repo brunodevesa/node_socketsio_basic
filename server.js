@@ -4,7 +4,7 @@ let http = require('http');
 let app = express();
 
 let server = http.createServer(app);
-let port = 8081;
+let port =  process.env.PORT || 8081;
 
 // routes
 let routes = require('./routes');
@@ -40,6 +40,6 @@ io.on('connection', function (socket) {
 });
 
 
-server.listen(port, function () {
+server.listen(port, '127.0.0.1', function () {
     console.log('express server listening on port ' + port);
 });

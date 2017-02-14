@@ -1,5 +1,9 @@
 // global variable socket:
-let socket = io();
+// let io = require('socket.io-client');
+
+// io.connect("http://localhost:8082");
+let socket = io('http://localhost:8081');
+// io.connect("http://173.212.207.18:8081");
 
 let my_title = document.getElementById('my_title');
 let my_btn = document.getElementById('my_btn');
